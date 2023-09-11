@@ -13,9 +13,11 @@
     },
   
     // Add the IDs of extensions you want installed when the container is created.
-    // "extensions": [
-    //   "dbaeumer.vscode-eslint"
-    // ],
+     "extensions": [
+		"dbaeumer.vscode-eslint",
+		"ms-azuretools.vscode-docker",
+		"ms-python.python"
+	],
   
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
