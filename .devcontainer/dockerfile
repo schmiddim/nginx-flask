@@ -2,7 +2,7 @@ FROM alpine:latest
 
 ARG KIND_VERSION=0.20.0
 
-RUN apk add --no-cache curl docker-cli openssl git k9s 
+RUN apk add --no-cache curl docker-cli openssl git k9s py3-pip python3 
 
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
