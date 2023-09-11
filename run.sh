@@ -1,4 +1,8 @@
 #!/bin/sh
+
+mkdir log
+touch log/unit.log
+mkdir state
 docker build --tag=unit-webapp .
 export UNIT=$(                                                         \
       docker run -d                                                      \
